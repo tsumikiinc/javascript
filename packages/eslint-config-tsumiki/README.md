@@ -5,7 +5,7 @@ TSUMIKI INC. [ESLint](http://eslint.org/) extensible shared config.
 ## Getting started
 
 ```
-npm i -D tsumikiinc/eslint-config-tsumiki
+npm i -D eslint-config-tsumiki
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm i -D tsumikiinc/eslint-config-tsumiki
 ### Standard (ES6)
 
 ```
-npm i -D tsumikiinc/eslint-config-tsumiki babel-eslint eslint-plugin-babel eslint
+npm i -D eslint-config-tsumiki babel-eslint eslint-plugin-babel eslint
 ```
 
 add `extends: 'tsumiki'` to `.eslintrc`
@@ -21,7 +21,7 @@ add `extends: 'tsumiki'` to `.eslintrc`
 ### ES6 + React
 
 ```
-npm i -D tsumikiinc/eslint-config-tsumiki babel-eslint eslint-plugin-babel eslint-plugin-react eslint
+npm i -D eslint-config-tsumiki babel-eslint eslint-plugin-babel eslint-plugin-react eslint
 ```
 
 add `extends: 'tsumiki/react'` to `.eslintrc`
@@ -29,7 +29,7 @@ add `extends: 'tsumiki/react'` to `.eslintrc`
 ### Legacy
 
 ```
-npm i -D tsumikiinc/eslint-config-tsumiki eslint
+npm i -D eslint-config-tsumiki eslint
 ```
 
 add `extends: 'tsumiki/legacy'` to `.eslintrc`
