@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-tsumiki",
+  "version": "0.0.0",
+  "description": "TSUMIKI INC. ESLint extensible shared config.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsumikiinc/javascript.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ignore-pattern node_modules/**"
+  },
+  "files": [
+    "rules",
+    "index.js",
+    "base.js",
+    "legacy.js",
+    "react.js",
+    "package.json",
+    "README.md"
+  ],
+  "author": "tsumikiinc",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^1.8.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=1.8.0"
+  }
+}

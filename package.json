@@ -1,0 +1,14 @@
+{
+  "name": "javascript",
+  "version": "0.0.0",
+  "description": "TSUMIKI INC. JavaScript style guide",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsumikiinc/javascript.git"
+  },
+  "author": "sato",
+  "license": "MIT"
+}
