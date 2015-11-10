@@ -8,23 +8,22 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ignore-pattern node_modules/**"
+    "lint": "eslint . --ignore-pattern node_modules/**",
+    "prepublish": "npm run lint"
   },
   "files": [
     "rules",
-    "index.js",
     "base.js",
-    "legacy.js",
+    "index.js",
     "react.js",
-    "package.json",
-    "README.md"
+    "standard.js"
   ],
   "author": "tsumikiinc",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^1.8.0"
+    "eslint": "^1.9.0"
   },
   "peerDependencies": {
-    "eslint": ">=1.8.0"
+    "eslint": ">=1.9.0"
   }
 }

@@ -10,7 +10,11 @@ module.exports = {
     'modules': true
   },
   'rules': {
-    // Arrow functionの省略できる`()`は省略する
+    // Arrow functionのボディ部分の省略できる`{}`は省略する
+    // http://eslint.org/docs/rules/arrow-parens
+    'arrow-body-style': [2, 'as-needed'],
+
+    // Arrow functionの引数部分の省略できる`()`は省略する
     // http://eslint.org/docs/rules/arrow-parens
     'babel/arrow-parens': [2, 'as-needed'],
 
@@ -25,6 +29,10 @@ module.exports = {
     // Generator functionの`*`の前後のスペースは後ろのみ
     // http://eslint.org/docs/rules/generator-star-spacing
     'babel/generator-star-spacing': [2, 'after'],
+
+    // 制御構文の条件式等でArrow functionを許可しない
+    // http://eslint.org/docs/rules/no-arrow-condition
+    'no-arrow-condition': 2,
 
     // クラス宣言の再代入は許可しない
     // http://eslint.org/docs/rules/no-class-assign
@@ -59,6 +67,9 @@ module.exports = {
     // http://eslint.org/docs/rules/prefer-const
     'prefer-const': 2,
 
+    // http://eslint.org/docs/rules/prefer-reflect
+    'prefer-reflect': 0,
+
     // `apply()`ではなくSpread演算子を利用する
     // http://eslint.org/docs/rules/prefer-spread
     'prefer-spread': 2,
@@ -66,9 +77,6 @@ module.exports = {
     // 文字列結合はテンプレートリテラルを利用する
     // http://eslint.org/docs/rules/prefer-template
     'prefer-template': 2,
-
-    // http://eslint.org/docs/rules/prefer-reflect
-    'prefer-reflect': 0,
 
     // `yield`を持っていないGenerator functionを許可しない
     // http://eslint.org/docs/rules/require-yield

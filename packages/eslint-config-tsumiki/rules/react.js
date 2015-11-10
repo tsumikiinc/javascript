@@ -7,6 +7,7 @@ module.exports = {
     'jsx': true
   },
   'rules': {
+    'jsx-quotes': [2, 'prefer-double'],
     'react/display-name': 0,
     'react/forbid-prop-types': 1,
     'react/jsx-boolean-value': 2,
@@ -17,7 +18,6 @@ module.exports = {
     'react/jsx-no-duplicate-props': 0,
     'react/jsx-no-literals': 0,
     'react/jsx-no-undef': 2,
-    'react/jsx-quotes': [2, 'double', 'avoid-escape'],
     'react/jsx-sort-prop-types': 0,
     'react/jsx-sort-props': 0,
     'react/jsx-uses-react': 2,

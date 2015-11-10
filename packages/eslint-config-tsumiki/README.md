@@ -28,11 +28,13 @@ add `extends: 'tsumiki/react'` to `.eslintrc`
 
 ### Legacy
 
+less than ES6
+
 ```
 npm i -D eslint-config-tsumiki eslint
 ```
 
-add `extends: 'tsumiki/legacy'` to `.eslintrc`
+add `extends: 'tsumiki/base'` to `.eslintrc`
 
 ## License
 

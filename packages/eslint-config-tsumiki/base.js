@@ -1,8 +1,22 @@
 module.exports = {
   extends: [
-    'eslint-config-tsumiki/legacy',
-    'eslint-config-tsumiki/rules/es6'
+    'eslint-config-tsumiki/rules/best-practices',
+    'eslint-config-tsumiki/rules/errors',
+    'eslint-config-tsumiki/rules/legacy',
+    'eslint-config-tsumiki/rules/node',
+    'eslint-config-tsumiki/rules/strict',
+    'eslint-config-tsumiki/rules/stylistic',
+    'eslint-config-tsumiki/rules/variables'
   ],
-  parser: 'babel-eslint',
+  env: {
+    browser: true,
+    node: true,
+    commonjs: true,
+    mocha: true,
+    jest: true,
+    jquery: true
+  },
+  ecmaFeatures: {},
+  globals: {},
   rules: {}
 };

@@ -41,6 +41,18 @@ module.exports = {
     // http://eslint.org/docs/rules/func-names
     'func-names': 1,
 
+    // 関数式、関数宣言どちらも許容
+    // http://eslint.org/docs/rules/func-style
+    'func-style': 0,
+
+    // 変数名、プロパティ名等の命名で文字数の制限はしない
+    // http://eslint.org/docs/rules/id-length
+    'id-length': 0,
+
+    // 変数名、プロパティ名等の命名でパターンマッチの制限はしない
+    // http://eslint.org/docs/rules/id-match
+    'id-match': 0,
+
     // インデントはスペース2 switch文で条件式はインデントしない
     // http://eslint.org/docs/rules/indent
     'indent': [2, 2, { SwitchCase: 0 }],
@@ -53,6 +65,11 @@ module.exports = {
     // http://eslint.org/docs/rules/key-spacing
     'key-spacing': [2, { beforeColon: false, afterColon: true }],
 
+
+    // 改行コードはUnix(LF)に統一
+    // http://eslint.org/docs/rules/linebreak-style
+    'linebreak-style': [2, 'unix'],
+
     // コメントを書くとき、前に空行を入れる
     // ブロック、オブジェクト、配列の1行目の場合は許容する
     // http://eslint.org/docs/rules/lines-around-comment
@@ -63,6 +80,35 @@ module.exports = {
       allowObjectStart: true,
       allowArrayStart: true
     }],
+
+    // 関数のネストは3ブロックまで
+    // http://eslint.org/docs/rules/max-nested-callbacks
+    'max-nested-callbacks': [2, 3],
+
+    // コンストラクタと思われる（パスカルケース）関数の呼び出し場合は`new`演算子とともに、
+    // そうでない場合の関数呼び出しではつけない
+    // http://eslint.org/docs/rules/new-cap
+    'new-cap': 2,
+
+    // `new`演算子と共に呼ばれる関数でも`()`は省略しない
+    // http://eslint.org/docs/rules/new-parens
+    'new-parens': 2,
+
+    // 変数宣言のあとの空行の有り無しの制限はしない
+    // http://eslint.org/docs/rules/newline-after-var
+    'newline-after-var': 0,
+
+    // `Array`コンストラクタによる配列の生成
+    // （引数を2以上渡しての要素定義）を許可しない
+    // http://eslint.org/docs/rules/no-array-constructor
+    'no-array-constructor': 2,
+
+    // http://eslint.org/docs/rules/no-continue
+    'no-continue': 2,
+
+    // コメントの入れる場所を制限しない
+    // http://eslint.org/docs/rules/no-inline-comments
+    'no-inline-comments': 0,
 
     // `else if`を適宜利用し、if文での無駄な入れ子を許可しない
     // http://eslint.org/docs/rules/no-lonely-if
@@ -76,6 +122,10 @@ module.exports = {
     // http://eslint.org/docs/rules/no-multiple-empty-lines
     'no-multiple-empty-lines': [2, { max: 3, maxEOF: 1 }],
 
+    // 条件式で否定形を最初にもっていくと警告
+    // http://eslint.org/docs/rules/no-negated-condition
+    'no-negated-condition': 1,
+
     // ネストした複雑な三項演算子は許可しない
     // http://eslint.org/docs/rules/no-nested-ternary
     'no-nested-ternary': 2,
@@ -84,13 +134,25 @@ module.exports = {
     // http://eslint.org/docs/rules/no-new-object
     'no-new-object': 2,
 
+    // `with`文の使用を許可しない
+    // http://eslint.org/docs/rules/no-restricted-syntax
+    'no-restricted-syntax': [2, 'WithStatement'],
+
     // 関数呼び出しで関数名と`()`の間にスペースや改行を許可しない
     // http://eslint.org/docs/rules/no-spaced-func
     'no-spaced-func': 2,
 
+    // 三項演算子の利用を許容
+    // http://eslint.org/docs/rules/no-ternary
+    'no-ternary': 0,
+
     // 行末に不要なスペースを許可しない 空行でも
     // http://eslint.org/docs/rules/no-trailing-spaces
     'no-trailing-spaces': 2,
+
+    // 命名で`_`を許容
+    // http://eslint.org/docs/rules/no-underscore-dangle
+    'no-underscore-dangle': 0,
 
     // 条件式のみで代入できる場合など不要な三項演算子を利用しない
     // http://eslint.org/docs/rules/no-unneeded-ternary
@@ -103,6 +165,11 @@ module.exports = {
     // 変数宣言時に1つの宣言でまとめない
     // http://eslint.org/docs/rules/one-var
     'one-var': [2, 'never'],
+
+
+    // `x = x + 4`を`x += 4`に
+    // http://eslint.org/docs/rules/operator-assignment
+    'operator-assignment': [1, 'always'],
 
     // 複数行に跨ぐ場合演算子の後で改行する
     // http://eslint.org/docs/rules/operator-linebreak
@@ -120,6 +187,10 @@ module.exports = {
     // http://eslint.org/docs/rules/quotes
     'quotes': [2, 'single', 'avoid-escape'],
 
+    // JSDocコメントなしを許容
+    // http://eslint.org/docs/rules/require-jsdoc
+    'require-jsdoc': 0,
+
     // 必要な場合はセミコロンの後ろにスペースを入れる 前には入れない
     // http://eslint.org/docs/rules/semi-spacing
     'semi-spacing': [2, { before: false, after: true }],
@@ -128,13 +199,13 @@ module.exports = {
     // http://eslint.org/docs/rules/semi
     'semi': [2, 'always'],
 
+    // 変数宣言のソートしないのを許容
+    // http://eslint.org/docs/rules/sort-vars
+    'sort-vars': 0,
+
     // キーワードの後ろに適切にスペースを入れる
     // http://eslint.org/docs/rules/space-after-keywords
     'space-after-keywords': 2,
-
-    // キーワードの前に適切にスペースを入れる
-    // http://eslint.org/docs/rules/space-before-keywords
-    'space-before-keywords': [2, 'always'],
 
     // ブロックの前には適切にスペースを入れる
     // http://eslint.org/docs/rules/space-before-blocks
@@ -143,6 +214,10 @@ module.exports = {
     // functionの`()`の後ろにはスペースを入れない
     // http://eslint.org/docs/rules/space-before-function-paren
     'space-before-function-paren': [2, 'never'],
+
+    // キーワードの前に適切にスペースを入れる
+    // http://eslint.org/docs/rules/space-before-keywords
+    'space-before-keywords': [2, 'always'],
 
     // `()`の両内側にスペースを入れない
     // http://eslint.org/docs/rules/space-in-parens
@@ -168,6 +243,10 @@ module.exports = {
       block: {
         exceptions: ['*', '!']
       }
-    }]
+    }],
+
+    // 正規表現リテラルを`()`でラップしないのを許容
+    // http://eslint.org/docs/rules/wrap-regex
+    'wrap-regex': 0
   }
 };
