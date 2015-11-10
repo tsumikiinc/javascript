@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tsumiki",
-  "version": "0.0.0-rc1",
+  "version": "0.0.1-rc1",
   "description": "TSUMIKI INC. ESLint extensible shared config.",
   "repository": {
     "type": "git",
